@@ -1,0 +1,57 @@
+
+-------------DISPLAY_------------------
+| OLED Pin | Raspberry Pi Pin | GPIO  |
+| -------- | ---------------- | ----- |
+| VCC      | Pin 1            | 3.3V  |
+| GND      | Pin 6            | GND   |
+| SDA      | Pin 3            | GPIO2 |
+| SCL      | Pin 5            | GPIO3 |
+
+--------------LED------------------------
+
+LED A (MIC status LED)
+| LED Pin           | Raspberry Pi    |
+| ----------------- | -0-------------- |
+| LED Long leg (+)  | GPIO22 (Pin 15) |
+| LED Short leg (-) | GND (Pin 14)    |
+
+
+LED B (Processing status LED)
+| LED Pin           | Raspberry Pi            |
+| ----------------- | ----------------------- |
+| LED Long leg (+)  | GPIO23 (Pin 16)         |
+| LED Short leg (-) | GND (Pin 14 or any GND) |
+
+
+
+---------Buttons--------------
+Button A (navi/meeting)
+| Button Pin | Raspberry Pi        |
+| ---------- | ------------------- |
+| One side   | **GPIO17 (Pin 11)** |
+| Other side | **GND (Pin 9)**     |
+
+Button B (Select/manaul mode)
+| Button Pin | Raspberry Pi        |
+| ---------- | ------------------- |
+| One side   | **GPIO27 (Pin 13)** |
+| Other side | **GND (Pin 9)**     |
+
+
+----------Speakers----------
+| Function    | Raspberry Pi Pin |
+| ----------- | ---------------- |
+| Audio Left  | GPIO13           |
+| |
+| Ground      | GND              |
+| Power       | 5V               |
+
+-----------MIC----------
+| Mic Pin | Raspberry Pi |
+| ------- | ------------ |
+| VDD     | 3.3V         |
+| GND     | GND          |
+| SCK     | GPIO18       |
+| WS      | GPIO19       |
+| SD      | GPIO20       |
+| L/R     | GND          |

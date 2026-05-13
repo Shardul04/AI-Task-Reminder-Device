@@ -1,0 +1,23 @@
+ssh shardul@raspbot.local
+cd ai_reminder_device
+source venv/bin/activate
+
+
+
+
+from task_manager import *
+add_task("Voice test", "2026-03-07 16:04")
+
+pkill -f python
+
+aplay /usr/share/sounds/alsa/Front_Center.wav
+alsamixer
+
+
+
+python task_receiver.py
+python new_device.py
+
+// python voice_to_task.py
+	
+venv\Scripts\activate
